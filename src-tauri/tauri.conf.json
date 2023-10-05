@@ -1,0 +1,40 @@
+{
+  "build": {
+    "devPath": "https://weread.qq.com/",
+    "distDir": "https://weread.qq.com/",
+    "withGlobalTauri": false
+  },
+  "package": {
+    "productName": "微信读书",
+    "version": "0.0.1"
+  },
+  "tauri": {
+    "allowlist": {
+      "all": false,
+      "shell": {
+        "all": false,
+        "open": true
+      }
+    },
+    "bundle": {
+      "active": true,
+      "targets": "all",
+      "identifier": "com.tauri.weread",
+      "icon": [
+        "icons/icon.icns"
+      ]
+    },
+    "security": {
+      "csp": null
+    },
+    "windows": [
+      {
+        "fullscreen": false,
+        "resizable": true,
+        "title": "微信读书",
+        "width": 1350,
+        "height": 880
+      }
+    ]
+  }
+}
